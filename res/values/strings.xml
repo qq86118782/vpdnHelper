@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">无线VPDN调测助手(4G)</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="apntip">名称：随意;\nAPN:3G的随意，4G的电信分配;\n用户名:电信或客户分配;\n密码:电信或客户分配;\nPPP拨叫号码:部分手机有，有则设置#777</string>
+    <string name="title_activity_test">TestActivity</string>
+    <string name="title_activity_pings">PingsActivity</string>
+    <string name="downloadtip">fun4g.com/vpdn</string>
+
+</resources>

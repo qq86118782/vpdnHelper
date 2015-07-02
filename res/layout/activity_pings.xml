@@ -1,0 +1,94 @@
+
+<ScrollView    
+      xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" 
+    android:layout_width="fill_parent"    
+    android:layout_height="fill_parent"    
+    android:scrollbars="vertical"    
+    android:fadingEdge="vertical"  tools:context=".PingsActivity" >   
+<LinearLayout  
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+ >
+
+     <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dip" >
+
+        <!-- 表格布局：第一行 -->
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@layout/shape_top_corner_no_bottom_line"
+            android:padding="10dip" 
+          >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dip"
+                android:text="目标:"
+                 >
+            </TextView>
+
+            <EditText
+                android:id="@+id/dest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@null"
+                android:singleLine="true"
+                 android:layout_span="2">
+
+                <requestFocus />
+            </EditText>
+	         
+        </TableRow>
+        <!-- 表格布局：第二行 -->
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@layout/shape_no_corner_without_bottom"
+            android:padding="10dip" >
+   				<Button
+                android:id="@+id/pingItBtn"
+                android:layout_column="1" 
+                 android:layout_width="fill_parent"
+                android:text="PING!" />
+        </TableRow>
+        <!-- 表格布局：第三行 -->
+
+ 
+        <TableRow  android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@layout/shape_bottom_corner_no_top_line"
+            android:padding="10dip">
+
+         
+
+                
+                  <TextView
+      	           android:id="@+id/pingView"
+      	           android:layout_column="1" 
+      	            android:layout_width="550px"
+      	            android:layout_height="wrap_content"/>
+             
+          
+ 
+      	 
+ 
+      	   </TableRow>
+      	       
+     
+      
+    
+    </TableLayout>
+</LinearLayout>
+</ScrollView>

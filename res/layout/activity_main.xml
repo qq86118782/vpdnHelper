@@ -1,0 +1,332 @@
+
+<ScrollView    
+      xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" 
+    android:layout_width="fill_parent"    
+    android:layout_height="fill_parent"    
+    android:scrollbars="vertical"    
+    android:fadingEdge="vertical"  tools:context=".MainActivity" >   
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+  
+  >
+ 
+    <!-- 表格布局 -->
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dip" >
+
+        <!-- 表格布局：第一行 -->
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@layout/shape_top_corner_no_bottom_line"
+            android:padding="10dip" 
+          >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dip"
+                android:text="IMSI号:" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/imsiView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@null"
+                android:singleLine="false"
+                android:layout_span="2"
+                android:text="" >
+            </TextView>
+        </TableRow>
+        <!-- 表格布局：第二行 -->
+   <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@layout/shape_no_corner_without_bottom"
+            android:padding="10dip" >
+
+            
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dip"
+                android:text="网络类型:" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/networkTypeView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                  android:layout_span="2"
+                      android:singleLine="false"
+                android:background="@null"
+               
+                android:text="" >
+            </TextView>
+        </TableRow>
+        <!-- 表格布局：第三行 -->
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@layout/shape_no_corner_without_bottom"
+            android:padding="10dip" >
+
+            
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dip"
+                android:text="1X信号:" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/cdmaView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                  android:layout_span="2"
+                android:background="@null"
+                android:singleLine="true"
+                android:text="" >
+            </TextView>
+        </TableRow>
+        <!-- 表格布局：第四行 -->
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@layout/shape_no_corner_without_bottom"
+            android:padding="10dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dip"
+                android:text="EVDO信号:" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/evdoView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                  android:layout_span="2"
+                android:background="@null"
+                android:singleLine="true"
+                android:text="" >
+            </TextView>
+        </TableRow>
+          <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@layout/shape_no_corner_without_bottom"
+            android:padding="10dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dip"
+                android:text="4G信号:" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/lteView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                  android:layout_span="2"
+                android:background="@null"
+                android:singleLine="true"
+                android:text="" >
+            </TextView>
+        </TableRow>
+        <!-- 表格布局：第五行 -->
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@layout/shape_no_corner_without_bottom"
+            android:padding="10dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dip"
+                android:text="连接的APN信息:" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/apnNameView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                  android:layout_span="2"
+                android:background="@null"
+                android:singleLine="true"
+                android:text="" >
+            </TextView>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@layout/shape_no_corner_without_bottom"
+            android:padding="10dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dip"
+                android:text="IP地址:" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/ipView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                  android:layout_span="2"
+                android:background="@null"
+                android:singleLine="true"
+                android:text="" >
+            </TextView>
+        </TableRow>
+        <!-- 表格布局：第三行 -->
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@layout/shape_no_corner_without_bottom"
+            android:padding="10dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dip"
+                android:text="详情:" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/detailView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@null"
+                android:singleLine="false"
+                  android:layout_span="2"
+                android:text="" >
+            </TextView>
+        </TableRow>
+	 
+      	<TableRow  android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@layout/shape_no_corner_without_bottom"
+            android:padding="10dip">
+      	    
+      	      <Button
+                android:id="@+id/setBtn"
+              
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="去设置APN" />
+		     <Button
+                android:id="@+id/pingBtn"
+              
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PING" />
+        
+        
+          <Button
+                android:id="@+id/gaojiBtn"
+                android:visibility="invisible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="高级命令" /> 
+      	</TableRow>
+        <TableRow  android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@layout/shape_no_corner_without_bottom"
+            android:padding="10dip">
+      	      <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dip"
+                android:text="APN设置注意:" 
+                android:scrollbars="vertical">
+            </TextView>
+
+            <TextView
+                 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@null"
+                android:singleLine="false"
+                android:layout_span="2"
+                android:text="@string/apntip" >
+            </TextView>
+            
+      	     
+      	</TableRow>
+      	  <TableRow  android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@layout/shape_bottom_corner_no_top_line"
+            android:padding="10dip">
+      	      <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dip"
+                android:text="工具下载地址:\nfun4g.com/vpdn" 
+                android:scrollbars="vertical">
+            </TextView>
+
+            <ImageView android:layout_width="150dp" 
+android:layout_height="150dp" 
+android:src="@drawable/vpdn" 
+android:layout_gravity="center" />
+      	     
+      	</TableRow>
+      
+    </TableLayout>
+
+  
+    
+        
+ 
+
+</LinearLayout>
+</ScrollView>
